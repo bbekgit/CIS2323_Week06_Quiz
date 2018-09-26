@@ -13,7 +13,7 @@ public class Yahtzee {
       
        input.close();
       
-       System.out.println("Rolling each separately and printing the values:");
+       System.out.println("Rolling each separately and printing the values: \n ");
        ob1.roll();
        ob2.roll();
       
@@ -21,9 +21,9 @@ public class Yahtzee {
        System.out.println("Dice 2 showing: "+ob2.getValue());
       
        int diceSum=ob1.getValue()+ob2.getValue();
-       System.out.println("Sum of the dice:"+diceSum);
+       System.out.println("Sum of the dice: \n"+diceSum);
       
-       System.out.println("\n for loop to roll the two dice 10 times show the values and the sum: ");
+       System.out.println("\n for loop to roll the two dice 10 times show the values and the sum: \n  ");
        System.out.println("Dice 1(side)       Dice 2(side)       SUM");
        for(int i=0; i<10; i++ ){
            ob1.roll();
@@ -33,7 +33,7 @@ public class Yahtzee {
           
        }
       
-       System.out.println("Creating five dice.");
+       System.out.println("Creating five dice. \n");
       
       
        Dice diceOb1 = new Dice();
@@ -48,7 +48,7 @@ public class Yahtzee {
       
        int yahtzeeCount=0;
       
-       System.out.println("Rolling until i find 1000 Yahtzees. Counting the number of rolls it takes to get each one.");
+       System.out.println("Rolling until i find 1000 Yahtzees. Counting the number of rolls it takes to get each one. \n ");
        for(int i=1; i<=1000; i++){
           
            Boolean yahtzee=false;
@@ -82,7 +82,7 @@ public class Yahtzee {
 
        }
        if(yahtzeeCount == 1000)
-           System.out.print("Found 1000 Yahtzees.");
+           System.out.print("Found 1000 Yahtzees. \n");
       
        System.out.print(" max rolls to find one: "+ sum);
        System.out.print(" min rolls : "+ minimumRolls);
