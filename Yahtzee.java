@@ -24,7 +24,7 @@ public class Yahtzee {
        System.out.println("Sum of the dice: \n"+diceSum);
       
        System.out.println("\n for loop to roll the two dice 10 times show the values and the sum: \n  ");
-       System.out.println("Dice 1(side)       Dice 2(side)       SUM");
+       System.out.println("Dice 1(side)       Dice 2(side)                SUM");
        for(int i=0; i<10; i++ ){
            ob1.roll();
            ob2.roll();
